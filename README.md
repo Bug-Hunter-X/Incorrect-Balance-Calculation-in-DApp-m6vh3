@@ -1,0 +1,3 @@
+This repository demonstrates a common error in DApps related to balance calculations. The `getBalance` function uses web3.js to retrieve a contract's balance. However, if the balance exceeds `Number.MAX_SAFE_INTEGER`, the returned value will be incorrect. This can lead to unexpected behavior and vulnerabilities in the DApp.
+
+The solution involves using a library like BigNumber.js to handle large numbers correctly. The `getBalanceSolution.js` file provides an example of how to implement this solution.
